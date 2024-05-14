@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+# Projeto Front-end do Bootcamp Sysmap
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o front-end do projeto desenvolvido durante o Bootcamp Sysmap. É necessário seguir alguns passos para executar o projeto localmente.
 
-Currently, two official plugins are available:
+## Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Certifique-se de ter o Docker e o Node.js instalados em sua máquina antes de prosseguir.
 
-## Expanding the ESLint configuration
+## Instalação e execução
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone este repositório em sua máquina local:
 
-- Configure the top-level `parserOptions` property like this:
+bash ou npm
+git clone https://github.com/seu-usuario/bootcamp-sysmap-frontend.git
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. Navegue até o diretório do projeto:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. Monte as imagens do Docker utilizando o docker-compose:
+bash ou npm 
+docker-compose -f docker-compose.yml up
+
+4. Após montar as imagens, execute o seguinte comando para iniciar o servidor de desenvolvimento:
+npm run dev
