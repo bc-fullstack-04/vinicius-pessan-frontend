@@ -1,0 +1,3 @@
+.modal-overlay {
+  z-index: 9999; /* ou um valor maior que qualquer outro elemento que possa estar sobrepondo o modal */
+}
