@@ -16,8 +16,10 @@ git clone https://github.com/seu-usuario/bootcamp-sysmap-frontend.git
 2. Navegue até o diretório do projeto:
 
 3. Monte as imagens do Docker utilizando o docker-compose:
+   
 bash ou npm 
 docker-compose -f docker-compose.yml up
 
-4. Após montar as imagens, execute o seguinte comando para iniciar o servidor de desenvolvimento:
+5. Após montar as imagens, execute o seguinte comando para iniciar o servidor de desenvolvimento:
+   
 npm run dev
